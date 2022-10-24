@@ -22,6 +22,7 @@ namespace SearchAlgorithm
             {
                 Console.Write("Enter the number elements in the array  ");
                 string s = Console.ReadLine();
+                n = Int32.Parse(s);
                 if ((n > 0) && (n <= 20))
                     break;
                 else
@@ -73,7 +74,7 @@ namespace SearchAlgorithm
                     Console.WriteLine("\n" + item.ToString() + "Not Found in the array \n");
                 Console.WriteLine("\nNumber of comprasion : " + ctr);
 
-                Console.Write("\nCOntinue search (y/n) : ");
+                Console.Write("\nContinue search (y/n) : ");
                 ch = char.Parse(Console.ReadLine());
 
             } while ((ch != 'y') || (ch == 'y'));
@@ -104,7 +105,7 @@ namespace SearchAlgorithm
                 if (i == n)
                     Console.WriteLine("\n" + item.ToString() + "not Found in the array");
                 Console.WriteLine("\n Number of comprasion : " + ctr);
-                Console.WriteLine("\nCOntinue search (y/n: ");
+                Console.WriteLine("\nContinue search (y/n: ");
                 ch = char.Parse(Console.ReadLine());
             } while ((ch == 'y') || (ch == 'y'));
         }
@@ -120,7 +121,7 @@ namespace SearchAlgorithm
                 Console.WriteLine("1.Linear Search");
                 Console.WriteLine("2.Binary Search ");
                 Console.WriteLine("3.Exit");
-                Console.WriteLine("Enter Your choice(1,2,3)");
+                Console.WriteLine("Enter Your choice(1,2,3): ");
                 pilihanmu = Convert.ToInt32(Console.ReadLine());
 
                 switch (pilihanmu)
