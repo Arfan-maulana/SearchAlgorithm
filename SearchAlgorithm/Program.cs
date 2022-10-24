@@ -145,11 +145,13 @@ namespace SearchAlgorithm
                         Console.WriteLine("Exit");
                         break;
                     default:
-                        Console.WriteLine("error";
+                        Console.WriteLine("error");
                         break;
-                } 
-                
-            }
+                }
+                //to exit from the console
+                Console.WriteLine("\n\nPress Return to exit.");
+                Console.ReadLine();
+            } while (pilihanmu != 3);
         }
 
 
